@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#601f2d">
+<meta name="description" content="The seven-day Maronite Divine Office in English, available offline.">
+<link rel="manifest" href="./app.webmanifest">
+<link rel="apple-touch-icon" href="./icon-192.png">
+<link rel="icon" href="./icon-192.png">
+<link rel="stylesheet" href="./style.css">
+<script src="./app.js" defer></script>
+<title>Maronite Divine Office</title>
+</head>
+<body>
+<a class="skip" href="#main-content">Skip to content</a>
+<header class="bar"><div class="bar-inner">
+<a class="brand" href="#today"><span aria-hidden="true">✥</span> Maronite Divine Office</a>
+<button id="settings-toggle" type="button" aria-expanded="false" aria-controls="settings">Reading settings</button>
+</div></header>
+<aside id="settings" class="settings" hidden aria-label="Reading settings">
+<label for="theme">Appearance</label><select id="theme"><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option></select>
+<label for="size">Prayer text size</label><select id="size"><option value="18">Small</option><option value="21">Medium</option><option value="24">Large</option><option value="28">Extra large</option><option value="32">Largest</option></select>
+</aside>
+<main id="main-content" tabindex="-1">
+<section class="masthead" id="masthead">
+<div class="seal" aria-hidden="true"><span>✥</span></div>
+<h1>Maronite Divine Office</h1>
+<p>Weekly prayer book</p>
+</section>
+<nav class="week" id="week" aria-label="Weekdays"></nav>
+<div id="view" aria-busy="true"><p>Loading the weekly office…</p></div>
+</main>
+<footer class="footer"><button id="help-toggle" type="button" aria-expanded="false" aria-controls="help">About &amp; installation</button><span id="offline" role="status"></span></footer>
+<section id="help" hidden aria-label="About and installation">
+<h2>Install this prayer book</h2>
+<p>On iPhone or iPad, open the app in Safari. Use Share, then Add to Home Screen. Turn on Open as Web App if Safari offers it, then tap Add. Open the new icon while still online and wait for “Ready for offline reading.” On Android or desktop, use your browser’s Install or Add to Home Screen option when available.</p>
+<h2>How the app selects the day</h2>
+<p>Today follows your device’s civil date. All seven Ramsho translations identify the office as the eve of their named day, so for Saturday evening, select Sunday and open Ramsho. The Sootoro documents use weekday labels without a consistent civil-date rule. The app keeps their source assignments and leaves evening selection to you.</p>
+<h2>About the translations</h2>
+<p>The reader preserves the wording in the supplied English translations. Common prayers referred to by rubric and other known gaps are marked in the relevant offices. Preferences and reading positions are saved on this device.</p>
+</section>
+</body>
+</html>
